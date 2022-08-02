@@ -1,7 +1,7 @@
 let txtInput = document.querySelector("#txt-input");
 let submitBtn = document.querySelector("#submit-btn");
 let output = document.querySelector("#output");
-let url = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
+let url = "https://api.funtranslations.com/translate/minion.json";
 
 submitBtn.addEventListener("click", clickHandler);
 
@@ -10,13 +10,12 @@ function errorHandler(error) {
 }
 
 function clickHandler() {
-  if (!txtInput.value == "") {
+  if (txtInput.value !== "") {
     let text = url + "?text=" + txtInput.value;
 
     fetch(text)
       .then((response) => response.json())
       .then((json) => (output.innerText = json.contents.translated))
       .catch(errorHandler);
-    txtInput.value = "";
   }
 }
