@@ -3,8 +3,9 @@
   padding: 0;
 }
 body {
-  text-align: center;
+  /* text-align: center; */
   font-family: Arial, Helvetica, sans-serif;
+  /* background: url(./img/5.svg); */
 }
 nav {
   background-color: #f2c94c;
@@ -14,6 +15,7 @@ nav {
 }
 .container {
   padding: 1rem;
+  text-align: center;
 }
 #txt-input {
   width: 60%;
@@ -45,6 +47,9 @@ nav {
   display: block;
   margin: auto;
   border: 1px solid gray;
+  text-align: left;
+  padding: 1rem;
+  background-color: #fff;
 }
 footer {
   background-color: #f2c94c;
@@ -52,4 +57,5 @@ footer {
   padding: 10px;
   position: fixed;
   bottom: 0;
+  text-align: center;
 }
